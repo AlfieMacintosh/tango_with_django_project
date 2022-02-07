@@ -1,10 +1,14 @@
 <!DOCTYPE html>
+{%extends 'rango/base.html'%}
 
-<html>
+{% block title_block %}
+Add a Page
+{% endblock %}
 
-	<head>
-		<title>Rango</title>
-	</head>
+{% block body_block %}
+<head>
+	<title>Rango</title>
+</head>
 
 	<body>
 		<h1>Add a Page to {{ category.name }}</h1>
@@ -21,6 +25,6 @@
 				{% endfor %}
 				<input type="submit" name="submit" value="Create Page" />
 			</form>
-		</div>
-	</body>
-</html>
+{% endblock %}
+
+
